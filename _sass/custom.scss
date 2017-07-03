@@ -1,0 +1,14 @@
+.ciao{
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+	border: 5px solid #ededed;
+	background-image: url(/assets/images/logo-no-border.png);
+	background-size: cover;
+	background-position: center;
+	border-radius: 90px;
+	&:hover{
+	border: 5px solid lime;
+	background-image: url(/assets/images/logo-no-border.png);
+	}
+}
