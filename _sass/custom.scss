@@ -3,13 +3,25 @@
 	height: 120px;
 	margin: 0 auto;
 	border: 5px solid #ededed;
-	background-image: url(/assets/images/profilo.png);
+	background-image: url(/assets/images/profilo-logo-hover.png);
 	background-size: cover;
 	background-position: center;
 	border-radius: 90px;
 	&:hover{
 	border: 5px solid lime;
 	opacity: 0.7;
-	background-image: url(/assets/images/profilo-logo-hover.png);
 	}
+}
+
+.tech-list{
+	list-style-type: none;
+	width: 100%;
+	padding-left: 0;
+}
+.tech-tool{
+	display: inline;
+	background: #dedede;
+	padding: 2px;
+	border-radius: 5px;
+	margin: 2px;
 }
