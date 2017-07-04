@@ -3,12 +3,13 @@
 	height: 120px;
 	margin: 0 auto;
 	border: 5px solid #ededed;
-	background-image: url(/assets/images/logo-no-border.png);
+	background-image: url(/assets/images/profilo.png);
 	background-size: cover;
 	background-position: center;
 	border-radius: 90px;
 	&:hover{
 	border: 5px solid lime;
-	background-image: url(/assets/images/logo-no-border.png);
+	opacity: 0.7;
+	background-image: url(/assets/images/profilo-logo-hover.png);
 	}
 }
