@@ -3,13 +3,18 @@
 	height: 120px;
 	margin: 0 auto;
 	border: 5px solid #ededed;
-	background-image: url(/assets/images/profilo-logo-hover.png);
+	background-image: url(/assets/images/profilo.png);
 	background-size: cover;
 	background-position: center;
 	border-radius: 90px;
 	&:hover{
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out; 
+	transition: opacity 1s ease-in-out;
 	border: 5px solid lime;
-	opacity: 0.7;
+	background-image: url(/assets/images/profilo-v.png);
 	}
 }
 
