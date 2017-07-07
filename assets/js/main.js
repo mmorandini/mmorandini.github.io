@@ -7,8 +7,8 @@ $(document).ready(function(){
     const bug = document.createElement('div');
     document.body.appendChild(bug);
     $(bug).addClass("bug");
-    $(bug).width('4px');
-    $(bug).height('2px');
+    $(bug).width('3px');
+    $(bug).height('1px');
     $(bug).css('position','absolute');
     bugs.push(bug);
   }
@@ -27,13 +27,13 @@ $(document).ready(function(){
     };
   }
 
-  window.setInterval(animateBugs, 500);
+  window.setInterval(animateBugs, 400);
 
   function animateBugs(){
     
       for (var i = bugs.length - 1; i >= 0; i--) {
         let BUG = bugs[i]
-        $(BUG).animate({top: Math.round(maxHeight * Math.random()), left: Math.round(maxWidth * Math.random())});  
+        $(BUG).animate({top: Math.round(maxHeight * Math.random()), left: Math.round(maxWidth * Math.random())}, 40000);  
       }
     
   }
