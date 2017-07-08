@@ -25,9 +25,9 @@ $(document).ready(function(){
     $(bugs[i]).css('top', y);
     
     if (x % 2 == 0 && x % 3 == 0){
-      $(bugs[i]).css('background-color','lime');
-    } else {
       $(bugs[i]).css('background-color','black');
+    } else {
+      $(bugs[i]).css('background-color','lime');
     };
   }
 
