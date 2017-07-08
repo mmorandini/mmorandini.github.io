@@ -11,7 +11,7 @@ $(document).ready(function(){
   
   createBugs();
   function createBugs(){
-    for (var i = 20; i >= 0; i--) {
+    for (var i = 200; i >= 0; i--) {
       const bug = document.createElement('div');
       document.body.appendChild(bug);
       $(bug).addClass("bug");
@@ -46,23 +46,29 @@ $(document).ready(function(){
   }
 
   window.setInterval(hideBugs, 100);
+  window.setInterval(showBugs, 200);
 
   function hideBugs(){
     for (let i = bugs.length - 1; i >= 0; i--) {
       let bugLeft = parseInt(bugs[i].style.left);
       if ((bugLeft > sectionLeft) && (bugLeft < sectionRight)){
         $(bugs[i]).css('display', 'none');
-      } else if ((bugLeft > sectionLeft) && (bugLeft > sectionRight) ){
+      } else if ((bugLeft < sectionLeft) && (bugLeft > sectionRight) ){
         $(bugs[i]).css('display', 'static');
       }
     }
   };
 
-  // function showBugs(){
-  //   for (var i = bugs.length - 1; i >= 0; i--) {
-  //     bugs[i]
-  //   }
-  // }
+  function showBugs(){
+    console.log("showBugs is firing");
+
+    for (var i = bugs.length - 1; i >= 0; i--) {
+      let bugLeft = parseInt(bugs[i].style.left);
+      if ((bugLeft < sectionLeft) && (bugLeft > sectionRight) ){
+        $(bugs[i]).css('display', 'static');
+      }
+    }
+  }
 });
 
 
