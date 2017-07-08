@@ -1,4 +1,8 @@
+const vm = {};
+
 $(document).ready(function(){
+  vm.bugs = [];
+  console.log(vm.bugs, vm);
   const bugs = [];
   const maxWidth = document.body.clientWidth;
   const maxHeight = document.body.clientHeight; 
@@ -16,7 +20,7 @@ $(document).ready(function(){
   for (var i = bugs.length - 1; i >= 0; i--) {
     const x = Math.round(maxWidth * Math.random());
     const y = Math.round(maxHeight * Math.random());
-    console.log(x);
+    // console.log(x);
     $(bugs[i]).css('left', x);
     $(bugs[i]).css('top', y);
     
@@ -37,10 +41,7 @@ $(document).ready(function(){
       }
     
   }
-
-  
-  
-  console.log(document.body);
+  // console.log(document.body);
 });
 
 
