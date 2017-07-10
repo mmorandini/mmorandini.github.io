@@ -6,18 +6,15 @@ $(document).ready(function(){
   const maxWidth   = document.body.clientWidth;
   const maxHeight  = document.body.clientHeight; 
   
-  let sectionLeft  = ($('#section')[0].getBoundingClientRect().left) - 40;
-  let sectionRight = ($('#section')[0].getBoundingClientRect().right) + 40;
+  let sectionLeft  = ($('#section')[0].getBoundingClientRect().left) - 90;
+  let sectionRight = ($('#section')[0].getBoundingClientRect().right) + 30;
   
   createBugs();
   function createBugs(){
-    for (var i = 200; i >= 0; i--) {
+    for (var i = 20; i >= 0; i--) {
       const bug = document.createElement('div');
       document.body.appendChild(bug);
       $(bug).addClass("bug");
-      $(bug).width('8px');
-      $(bug).height('3px');
-      $(bug).css('position','absolute');
       bugs.push(bug);
     }
   
@@ -27,7 +24,9 @@ $(document).ready(function(){
       // console.log(x);
       $(bugs[i]).css('left', x);
       $(bugs[i]).css('top', y);
-      
+
+
+      ///it gets read too early!!!!
       if (x % 2 == 0 && x % 3 == 0){
         $(bugs[i]).css('background-color','black');
       } else {
@@ -40,8 +39,8 @@ $(document).ready(function(){
 
   function animateBugs(){
     for (let i = bugs.length - 1; i >= 0; i--) {
-      let BUG = bugs[i]
-      $(BUG).animate({top: Math.round(maxHeight * Math.random()), left: Math.round(maxWidth * Math.random())}, 40000);  
+      let bug = bugs[i]
+      $(bug).animate({top: Math.round(maxHeight * Math.random()), left: Math.round(maxWidth * Math.random())}, 40000);  
     }
   }
 
@@ -51,12 +50,13 @@ $(document).ready(function(){
   function hideBugs(){
     for (let i = bugs.length - 1; i >= 0; i--) {
       let bugLeft = parseInt(bugs[i].style.left);
-      if ((bugLeft > sectionLeft) && (bugLeft < sectionRight)){
-        $(bugs[i]).css('display', 'none');
-      } else if ((bugLeft < sectionLeft) && (bugLeft > sectionRight) ){
-        $(bugs[i]).css('display', 'static');
+      if (bugLeft > sectionLeft && bugLeft < sectionRight){
+        $(bugs[i]).addClass('unactive');
+      } else {
+        $(bugs[i]).removeClass('unactive');
       }
     }
+    console.log(sectionLeft, sectionRight, bugLeft);
   };
 
   function showBugs(){
