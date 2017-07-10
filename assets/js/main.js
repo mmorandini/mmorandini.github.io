@@ -6,7 +6,7 @@ $(document).ready(function(){
   const maxWidth   = document.body.clientWidth;
   const maxHeight  = document.body.clientHeight; 
   
-  let sectionLeft  = ($('#section')[0].getBoundingClientRect().left) - 90;
+  let sectionLeft  = ($('#section')[0].getBoundingClientRect().left) - 60;
   let sectionRight = ($('#section')[0].getBoundingClientRect().right) + 30;
   
   createBugs();
@@ -30,7 +30,7 @@ $(document).ready(function(){
       if (x % 2 == 0 && x % 3 == 0){
         $(bugs[i]).css('background-color','black');
       } else {
-        $(bugs[i]).css('background-color','lime');
+        $(bugs[i]).css('background-color','#01FF70');
       };
     }
   };
