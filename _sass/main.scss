@@ -296,6 +296,7 @@ article {
 }
 .footer {
   margin-top: 50px;
+
   color: #777;
   a {
     border: none;
@@ -303,7 +304,7 @@ article {
   }
 }
 section {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto 50px auto;
   ul {
     list-style: none;
@@ -313,9 +314,7 @@ section {
       margin: 25px 0;
       .title {
         max-width: 100%;
-        //overflow: hidden !important;
-        //text-overflow: ellipsis !important;
-        //white-space: nowrap !important;
+        
         word-wrap: normal !important;
       }
       a {
