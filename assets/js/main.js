@@ -56,12 +56,10 @@ $(document).ready(function(){
         $(bugs[i]).removeClass('unactive');
       }
     }
-    console.log(sectionLeft, sectionRight, bugLeft);
+    // console.log(sectionLeft, sectionRight, bugLeft);
   };
 
   function showBugs(){
-    console.log("showBugs is firing");
-
     for (var i = bugs.length - 1; i >= 0; i--) {
       let bugLeft = parseInt(bugs[i].style.left);
       if ((bugLeft < sectionLeft) && (bugLeft > sectionRight) ){
