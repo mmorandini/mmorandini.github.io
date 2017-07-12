@@ -1,4 +1,4 @@
-html, body, main{
+html, body{
   height: 100%;
 }
 
@@ -20,6 +20,7 @@ body {
   }
   @media (max-width: 800px) {
     padding: 35px 20px;
+    height: 100%;
   }
   &:after{
     display:none;
@@ -296,7 +297,7 @@ article {
 }
 .footer {
   margin-top: 50px;
-
+  
   color: #777;
   a {
     border: none;
@@ -333,7 +334,8 @@ section {
         letter-spacing: 1px;
         text-transform: uppercase;
       }
-      @media (min-width: 992px) {a {
+      @media (min-width: 992px) {
+      a {
           border-bottom: 2px solid transparent;
           &:hover {
             border-color: #000;

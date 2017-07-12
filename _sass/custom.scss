@@ -1,5 +1,3 @@
-
-
 .ciao{
 	width: 120px;
 	height: 120px;
@@ -42,7 +40,13 @@ p.typer2{
 	line-height: 1.2em;
 	text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
-
+.exp-section{
+	min-height: 70vh;
+	
+	@media (max-width: 800px){
+		height: 900px
+	}
+}
 .exp-content{
 	width: 80vw;
 }
@@ -54,6 +58,9 @@ p.typer2{
 
 .box{
 	height: 350px;
+	@media (max-width: 800px){
+	height: 250px;
+	}
 }
 
 @keyframes type{ 
@@ -68,6 +75,9 @@ p.typer2{
 
 .section-header{
 	margin-left: 26vw;
+	@media (max-width: 800px){
+	margin: 0;
+	}
 }
 .icon{
 	width: 35px;
