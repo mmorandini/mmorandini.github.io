@@ -41,10 +41,11 @@ p.typer2{
 	text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
 .exp-section{
-	min-height: 70vh;
+	height: 70vh;
 	@media (max-width: 800px){
 		height: 900px
 	}
+
 }
 .exp-content{
 	width: 80vw;
