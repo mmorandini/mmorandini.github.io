@@ -73,8 +73,14 @@ p.typer2{
   50%{width: 0;}
   100%{ width: 100; } 
 } 
-
+.lobster{
+	font-family: 'Lobster', cursive;
+}
+.lime{
+	color: #01FF70;
+}
 .section-header{
+	font-family: 'Lobster', cursive;
 	margin-left: 26vw;
 	@media (max-width: 800px){
 	margin: 0;
