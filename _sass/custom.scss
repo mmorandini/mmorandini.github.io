@@ -19,26 +19,26 @@
 }
 
 p.typer{
-	color: #dedede;
+	color: white;
   	margin: 10px 0 10px 10px;
   	white-space: nowrap;
   	overflow: hidden;
   	width: 100%;
   	animation: type 4s steps(60, end);
-  	line-height: 1.1em;
-  	text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+  	line-height: 1.3em;
+  	///text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
 
 p.typer2{
-	color: #dedede;
+	color: white;
 	margin: 10px 0 10px 10px;
   	white-space: nowrap;
   	overflow: hidden;
   	width: 100%;
 	animation: type2 8s steps(60, end);
 	text-align: center;
-	line-height: 1.2em;
-	text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+	line-height: 1.5em;
+	///text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
 .exp-section{
 	height: 70vh;
